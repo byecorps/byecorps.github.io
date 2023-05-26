@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<style>
+    
+    .color {
+            display:block;
+            height: 200px;
+            margin: 30px auto;
+            width: 90%;
+            max-width: 600px;
+
+            border-radius: 17.5px;
+
+            /* align the text in the middle */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            font-family: var(--fnt-byecorps);
+            font-size: 2em; 
+
+        }
+
+        .colours {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            transition: 0.5s;
+        }
+
+        @media screen and (max-width: 600px) {
+            .colours {
+                grid-template-columns: 1fr;
+            }
+        }
+    
+</style>
+
+<Layout title="Branding">
+    <h1>Branding</h1>
+    <p>Here at ByeCorps, we have a very simple logo: our company name typeset in Montserrat. Not only does this work well almost everywhere (notable exemptions being website favicons), it also means we don't have to pay anyone.</p>
+    <nav class="toc">
+        <h2>Contents</h2>
+        <ul>
+            <li><a href="#colours">Colours</a></li>
+        </ul>
+    </nav>
+
+    <h2 id="colours">Colours</h2>
+    <p>ByeCorps mainly uses these four colors:</p>
+        <div class="colours">
+        <div class="color bg-byecorps-blue fg-byecorps-white"><div>ByeCorps Blue</div><div class="small">#1b5652</div></div>
+        <div class="color bg-byecorps-white fg-byecorps-blue"><div>ByeCorps White</div><div class="small">#e6feff</div></div>
+        <div class="color bg-black fg-white"><div>Black</div><div class="small">#000000</div></div>
+        <div class="color bg-white fg-black" style="border: var(--byecorps-white) 1px solid;"><div>White</div><div class="small">#ffffff</div></div>
+    </div>
+</Layout>
