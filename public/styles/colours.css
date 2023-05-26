@@ -1,0 +1,38 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --byecorps-blue: #1b5652;
+    --byecorps-white: #e6feff;
+}
+
+.bg-byecorps-blue {
+    background-color: var(--byecorps-blue);
+}
+
+.bg-byecorps-white {
+    background-color: var(--byecorps-white);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.fg-byecorps-blue {
+    color: var(--byecorps-blue);
+}
+
+.fg-byecorps-white {
+    color: var(--byecorps-white);
+}
+
+.fg-black {
+    color: var(--black);
+}
+
+.fg-white {
+    color: var(--white);
+}
